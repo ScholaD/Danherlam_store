@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+    background-color: #FFFFE4;
+    min-height: 100vh; 
+  }
+  
+  .search-header, .nav-header {
+    overflow: hidden;
+    background-color: #6E260E;
+    width: 100%;
+    z-index: 1000; /* Ensure header appears above other content */
+  }
+
+  .search-header {
+    position: fixed;
+    top: 0;
+  }
+  
+  .account img {
+    height: 30px; /* Adjust height as needed */
+    width: 30px; /* Adjust width as needed */
+    margin-left: 10px;
+  }
+
+  .nav-header {
+    position: fixed;
+    top: 50px; /* Adjust based on the height of the search header */
+    border-top: 2px solid blue; /* Add blue border at the top */
+   /* Adjust based on the height of the search header */
+  }
+  
+  .logo {
+    float: left;
+    margin-left: 20px; /* Adjust margin as needed */
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust height as needed */
+    margin-top: 15px; /* Adjust margin as needed */
+    width: auto;
+  }
+  
+  .nav-header ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 300px;
+    overflow: hidden;
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .nav-header li {
+    margin: 15px;
+    font-weight: bold;
+    font-size: 15px;
+  }
+  
+  .nav-header li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  .nav-header li a:hover:not(.active) {
+    background-color: #B87333;
+  }
+  
+  .active {
+    background-color: #B87333;
+  }
+
+  .search {
+    margin-top: 10px;
+    margin-left: 180px;
+    padding-left: 290px;
+  }
+
+  .search input[type=text] {
+    padding: 6px;
+    margin-top: 8px;
+    font-size: 17px;
+    border: none;
+    border-radius: 5px 0 0 5px;
+    width: 650px; /* Adjust width as needed */
+  }
+
+  .search form {
+    display: flex;
+    width: 100%; 
+}
+
+  .search button {
+    float: right;
+    padding: 6px 10px;
+    margin-top: 8px;
+    margin-right: 10px;
+    background: blue;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .search button:hover {
+    background: #ccc;
+  }
+
+  .cart img,
+  .search img {
+    height: 35px; /* Adjust height as needed */
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  
+  .slideshow {
+    margin-top: 100px; /* Adjust margin-top to fit below the header */
+    width: 300px; /* Adjust as needed */
+    height: 100px; /* Adjust as needed */
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 80%;
+    position: absolute;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 80%;
+    object-fit: fill; 
+    margin-top: 10px;
+    padding-top: 5%;/* Ensure images cover the entire slide */
+  }
+  
+  /* Animation */
+  .slide:nth-child(1) {
+    animation: slideAnimation 9s infinite 0s;
+  }
+  
+  .slide:nth-child(2) {
+    animation: slideAnimation 9s infinite 3s;
+  }
+  
+  .slide:nth-child(3) {
+    animation: slideAnimation 9s infinite 6s;
+  }
+  
+  @keyframes slideAnimation {
+    0% {
+      opacity: 0;
+    }
+    20% {
+      opacity: 1;
+    }
+    80% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  /* Existing CSS code... */
+
+.text-overlay {
+    position: absolute;
+    top: 57%;
+    left: 3%;
+    text-align: left;
+    color: blue;
+    font-weight: bold;
+  }
+  
+  .text-overlay h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+  
+  .text-overlay p {
+    font-size: 20px;
+    margin: 0;
+  }
+  
+  .featured-section {
+    padding: 50px 20px;
+    text-align: center;
+    padding-top: 50%;
+  }
+
+  .product {
+    display: inline-block;
+    width: 250px;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+  }
+
+  .product img {
+    width: 100%;
+    border-radius: 5px;
+  }
+
+  .product h3 {
+    margin-top: 10px;
+    font-size: 1.2em;
+  }
+
+  .product p {
+    margin-top: 5px;
+    font-size: 1em;
+    color: #777;
+  }
+
+ /* Your existing CSS styles */
+
+/* Newsletter Section */
+/* Your existing CSS styles */
+
+/* Newsletter Section */
+#newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c96303;
+    padding: 20px;
+    color: #fff;
+}
+
+#newsletter h4 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#newsletter p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+#newsletter p span {
+    color: yellow;
+}
+
+#newsletter input {
+    height: 3.125rem;
+    padding: 0 1.25rem;
+    font-size: 14px;
+    width: calc(60% - 10px);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    outline: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+#newsletter button {
+    background-color: rgb(80, 164, 209);
+    white-space: nowrap;
+    color: #fff;
+    border: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    height: 3.125rem;
+    cursor: pointer;
+    width: calc(40% - 10px);
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: #dfb6a9;
+    color: #fff;
+    padding: 20px;
+    margin-top: auto;
+}
+
+footer .col {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+footer h4 {
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a {
+    font-size: 13px;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+footer .follow {
+    margin-top: 20px;
+}
+
+footer .follow i {
+    color: #fff;
+    padding-right: 4px;
+    cursor: pointer;
+}
+
+footer .install .row img {
+    border: 1px solid green;
+    border-radius: 6px;
+}
+
+footer .install .img {
+    margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover,
+footer a:hover {
+    color: yellow;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+/* Additional styles for newsletter button */
+.newsletter-btn {
+    background-color: rgb(80, 164, 209);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background-color: #0074D9;
+}
+
+.sidebar {
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-top: 150px;
+    width: 250px;
+    position: fixed;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.sidebar h2 {
+    margin-top: 0;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    cursor: pointer;
+    padding: 5px 0;
+}
+
+.sidebar ul li:hover {
+    background-color: #ddd;
+}
+
+.content {
+    margin-left: 250px;
+    padding: 20px;
+}
