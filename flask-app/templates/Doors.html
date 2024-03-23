@@ -6,10 +6,10 @@
     <title>Your Title Here</title>
         <!--Link for styles-->
     <link rel="stylesheet" href="../static/styles/style.css">
+      <link rel="stylesheet" href="../static/styles/styles.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/my_styles.css') }}">
 </head>
 <body>
-        <!--This is the Header-->
     <div class="search-header">
         <div class="search">
           <form action="#">
@@ -17,22 +17,199 @@
               <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         </div>
+        <ul>
+              <li class="cart"><a href="account.html"><img src="../static/images/homepage/download.png" alt="About"></a></li>
+
+        </ul>
       </div>
       <div class="nav-header">
         <div class="logo">
-          <img src="../static/images/homepage/logo.png" alt="Logo">
+            <a href="index.html">
+                <img src="../static/images/homepage/logo.png" alt="Logo">
+            </a>
         </div>
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="Tiles.html">Tiles</a></li>
-          <li><a href="Doors.html">Doors</a></li>
+          <li><a  class="active"  href="Doors.html">Doors</a></li>
           <li><a href="Roofsheet.html">Roofing Sheets</a></li>
           <li><a href="Contact.html">Contact</a></li>
-          <li><a  class="active" href="About.html">About</a></li>
-          <li class="cart"><a href="cart.html"><img src="image/cart.png" alt="Cart"></a></li>
-          <li class="cart"><a href="account.html"><img src="../static/images/homepage/download.png" alt="About"></a></li>
-        </ul>
+          <li class="cart"><a href="cart.html"><img src="../static/images/homepage/cart.png" alt="Cart"></a></li>
+          <li class="dropdown">
+            <a href="account.html" class="cart">
+                <img src="../static/images/homepage/download.png" alt="About">
+            </a>
+            <div class="dropdown-content">
+                <a href="signin.html">Sign In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </li>
+    </ul>
+    </div>
+
+
+    <div class="slideshow-container">
+        <div class="slide">
+          <img src="../static/images/homepage/products/face.jpg" alt="Slide 1">
+        </div>
+        <div class="slide">
+          <img src="../static/images/homepage/products/face2.png" alt="Slide 2">
+        </div>
       </div>
+
+      <aside class="sidebar">
+        <h2>Product Colour</h2>
+        <ul>
+            <li>White</li>
+            <li>Silver</li>
+            <li>Beige</li>
+            <li>Cream</li>
+            <li>Gold</li>
+            <li>Yellow</li>
+            <li>Orange</li>
+            <li>Red</li>
+            <li>Pink</li>
+            <li>Purple</li>
+            <li>+ More</li>
+        </ul>
+
+        <h2>Price per m²</h2>
+        <input type="text" placeholder="£">
+        <input type="text" placeholder="£">
+
+        <h2>Door Size</h2>
+        <input type="text" placeholder="Tile Size">
+
+        <h2>Door Material</h2>
+        <input type="text" placeholder="Tile Material">
+
+        <!-- Add more filters as needed -->
+    </aside>
+
+    <div class="content">
+        <!-- Main content goes here -->
+    </div>
+
+    <div class="writeup">
+      <h4> Experience elegance with our pivot doors—modern design meets seamless functionality. Choose from a variety of styles and finishes to complement your space perfectly. Our expert team ensures a smooth and customized installation process. Elevate your entryway with our premium pivot doors today!</h4>
+    </div>
+
+
+    <section class="featured-sections">
+        <h2 style="font-size: 60px; font-weight: bold;">Featured Products</h2>
+        <div class="products">
+          <img src="../static/images/homepage/products/door1.jpeg" alt="Product 1">
+          <h3>Pivot Door</h3>
+          <button><p>ADD TO CART </p></button>
+          <p>#18,00000</p>
+        </div>
+        <div class="products">
+            <img src="../static/images/homepage/products/door2.jpg" alt="Product 1">
+            <h3>Pivot Door</h3>
+            <button><p>ADD TO CART </p></button>
+            <p>#18,00000</p>
+          </div>
+          <div class="products">
+            <img src="../static/images/homepage/products/door3.jpg" alt="Product 1">
+            <h3>Pivot Door</h3>
+            <button><p>ADD TO CART </p></button>
+            <p>#18,0000</p>
+          </div>
+          <div class="products">
+            <img src="../static/images/homepage/products/doors5.jpg" alt="Product 1">
+            <h3>Pivot Door</h3>
+            <button><p>ADD TO CART </p></button>
+            <p>#18,00000</p>
+          </div>
+        <div class="products">
+          <img src="../static/images/homepage/products/image8.jpeg" alt="Product 5">
+          <h3>Pivot Door</h3>
+          <button><p>ADD TO CART </p></button>
+          <p>#18,00000</p>
+        </div>
+        
+        <div class="products">
+          <img src="../static/images/homepage/products/image6.jpeg" alt="Product 6">
+          <h3>Pivot Door</h3>
+          <button><p>ADD TO CART </p></button>
+          <p>#18,00000</p>
+        </div>
+    
+        <div class="products">
+            <img src="../static/images/homepage/products/image7.jpeg" alt="Product 7">
+            <h3>Pivot Door</h3>
+            <button><p>ADD TO CART </p></button>
+            <p>#18,00000</p>
+          </div>
+
+          <div class="products">
+            <img src="../static/images/homepage/products/doors6.jpg" alt="Product 1">
+            <h3>Pivot Door</h3>
+            <button><p>ADD TO CART </p></button>
+            <p>#18,000</p>
+          </div>
+        
+          <div class="products">
+            <img src="../static/images/homepage/products/doors7.jpg" alt="Product 1">
+            <h3>Pivot Door</h3>
+            <button><p>ADD TO CART </p></button>
+            <p>#18,000</p>
+          </div>
+
+          <div class="products">
+            <img src="../static/images/homepage/products/doors8.jpg" alt="Product 1">
+            <h3>Pivot Door</h3>
+            <button><p>ADD TO CART </p></button>
+            <p>#18,000</p>
+          </div>
+      </section>  
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
       <section id="newsletter">
         <div class="newstext">
             <h4>Sign up for Newsletter</h4>
@@ -46,7 +223,7 @@
     
     <footer>
         <div class="col Logo">
-            <img src="Image/logo.png" alt="" width="120px" height="70px">
+            <img src="../static/images/homepage/logo.png" alt="" width="120px" height="70px">
             <h4>Contact</h4>
             <p><strong>Address: </strong>No 27, Chris Madueke Street, Lekki Phase1, Lagos</p>
             <p><strong>Phone: </strong>+234 7064154581</p>
@@ -99,3 +276,8 @@
     
     </body>
     </html>
+    
+
+
+
+

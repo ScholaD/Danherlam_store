@@ -1,1 +1,205 @@
- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Title Here</title>
+        <!--Link for styles-->
+    <link rel="stylesheet" href="../static/styles/style.css">
+      <link rel="stylesheet" href="../static/style/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/my_styles.css') }}">
+</head>
+<body>
+    <div class="search-header">
+        <div class="search">
+          <form action="#">
+              <input type="text" placeholder="Search Products..." name="search">
+              <button type="submit"><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+        <ul>
+              <li class="cart"><a href="account.html"><img src="../static/images/homepage/download.png" alt="About"></a></li>
+
+        </ul>
+      </div>
+      <div class="nav-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../static/images/homepage/logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a  href="Tiles.html">Tiles</a></li>
+          <li><a href="Doors.html">Doors</a></li>
+          <li><a class="active" href="Roofsheet.html">Roofing Sheets</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li class="cart"><a href="cart.html"><img src="../static/images/homepage/cart.png" alt="Cart"></a></li>
+          <li class="dropdown">
+            <a href="account.html" class="cart">
+                <img src="../static/images/homepage/download.png" alt="About">
+            </a>
+            <div class="dropdown-content">
+                <a href="signin.html">Sign In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </li>
+    </ul>
+    </div>
+
+
+    <div class="slideshow-container">
+        <div class="slide">
+          <img src="../static/images/homepage/products/faces1.png" alt="Slide 1">
+        </div>
+        <div class="slide">
+          <img src="../static/images/homepage/products/faces2.jpg" alt="Slide 2">
+        </div>
+    
+    
+      <aside class="sidebar">
+        <h2>Product Colour</h2>
+        <ul>
+            <li>White</li>
+            <li>Silver</li>
+            <li>Beige</li>
+            <li>Cream</li>
+            <li>Gold</li>
+            <li>Yellow</li>
+            <li>Orange</li>
+            <li>Red</li>
+            <li>Pink</li>
+            <li>Purple</li>
+            <li>+ More</li>
+        </ul>
+    
+        <h2>Price per m²</h2>
+        <input type="text" placeholder="£">
+        <input type="text" placeholder="£">
+    
+        <h2>Sheets Size</h2>
+        <input type="text" placeholder="Tile Size">
+    
+        <h2>Sheets Material</h2>
+        <input type="text" placeholder="Tile Material">
+    
+        <!-- Add more filters as needed -->
+    </aside>
+    
+    <div class="content">
+        <!-- Main content goes here -->
+    </div>
+
+    <div class="writeup">
+        <h4> Welcome to our roofing sheets collection, where quality meets durability and style. Choose from a variety of materials, including metal and asphalt, tailored to withstand harsh weather conditions. Our versatile styles range from traditional to modern, ensuring a perfect fit for any architectural design. With expert installation services, our team guarantees a secure and long-lasting roofing solution. Upgrade your roof today and protect your property with our premium roofing sheets</h4>
+      </div>
+    
+      <section class="featured-sections">
+        <h2 style="font-size: 60px; font-weight: bold;">Featured Products</h2>
+        <div class="product">
+          <img src="../static/images/homepage/products/sheets1.jpg" alt="Product 1">
+          <h3>Roofing Sheets</h3>
+          <button><p>ADD TO CART </p></button>
+          <p>#18,000</p>
+        </div>
+    
+        <div class="products">
+          <img src="../static/images/homepage/products/sheets3.jpg" alt="Product 2">
+          <h3>Roofing Sheets</h3>
+          <button><p>ADD TO CART </p></button>
+          <p>#15,000</p>
+        </div>
+    
+        <div class="products">
+          <img src="../static/images/homepage/products/metal sheets.png" alt="Product 6">
+          <h3>Metal Sheets</h3>
+          <button><p>ADD TO CART </p></button>
+          <p>#35,000</p>
+        </div>
+    
+        <div class="products">
+            <img src="../static/images/homepage/products/corrugated sheets.png" alt="Product 7">
+            <h3> Corrugated sheets </h3>
+            <button><p>ADD TO CART </p></button>
+            <p>#15,000</p>
+        </div>
+    
+        <div class="products">
+            <img src="../static/images/homepage/products/image11.jpeg" alt="Product 8">
+            <h3>Mongaleri</h3>
+            <button><p>ADD TO CART </p></button>
+            <p>#35,000</p>
+          </div>
+      </section>  
+
+      <section id="newsletter">
+        <div class="newstext">
+            <h4>Sign up for Newsletter</h4>
+            <p>Get e-mail updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign up</button>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="col Logo">
+            <img src="../static/images/homepage/products/logo.png" alt="" width="120px" height="70px">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>No 27, Chris Madueke Street, Lekki Phase1, Lagos</p>
+            <p><strong>Phone: </strong>+234 7064154581</p>
+            <p><strong>Hours: </strong>Monday to Fridy (8am - 6pm)</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
+            </div>
+        </div>
+        
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact us</a>
+        </div>
+            
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App store or google store</p>
+            <div class="row">
+                <a href="#"><img src="../static/images/footer-images/playstore.png" alt="" width="150px" height="100px"></a>
+                <a href="#"><img src="../static/images/footer-images/appstore.png" alt="" width="150px" height="100px"></a>
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../static/images/footer-images/secured-payment.png" alt="">
+        </div>
+    
+        <div class="copyright">
+            <p>&#169 Dray Fingerfoods & Grills. 2024</p>
+        </div>
+    </footer>
+    
+    
+    </body>
+    </html>
+    
+
+
+
+

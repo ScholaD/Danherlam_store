@@ -6,10 +6,10 @@
     <title>Your Title Here</title>
         <!--Link for styles-->
     <link rel="stylesheet" href="../static/styles/style.css">
+      <link rel="stylesheet" href="../static/styles/styles.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/my_styles.css') }}">
 </head>
 <body>
-        <!--This is the Header-->
     <div class="search-header">
         <div class="search">
           <form action="#">
@@ -17,23 +17,36 @@
               <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         </div>
+        <ul>
+              <li class="cart"><a href="account.html"><img src="../static/images/homepage/download.png" alt="About"></a></li>
+
+        </ul>
       </div>
       <div class="nav-header">
         <div class="logo">
-          <img src="../static/images/homepage/logo.png" alt="Logo">
+            <a href="index.html">
+                <img src="../static/images/homepage/logo.png" alt="Logo">
+            </a>
         </div>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="Tiles.html">Tiles</a></li>
+          <li><a  href="Tiles.html">Tiles</a></li>
           <li><a href="Doors.html">Doors</a></li>
-          <li><a href="Roofsheet.html">Roofing Sheets</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a  class="active" href="About.html">About</a></li>
-          <li class="cart"><a href="cart.html"><img src="image/cart.png" alt="Cart"></a></li>
-          <li class="cart"><a href="account.html"><img src="../static/images/homepage/download.png" alt="About"></a></li>
-        </ul>
-      </div>
-<!--My footer actually started here -->
+          <li><a  href="Roofsheet.html">Roofing Sheets</a></li>
+          <li><a class="active" href="Contact.html">Contact</a></li>
+          <li class="cart"><a href="cart.html"><img src="../static/images/homepage/cart.png" alt="Cart"></a></li>
+          <li class="dropdown">
+            <a href="account.html" class="cart">
+                <img src="../static/images/homepage/products/download.png" alt="About">
+            </a>
+            <div class="dropdown-content">
+                <a href="signin.html">Sign In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </li>
+    </ul>
+    </div>
+
       <section id="newsletter">
         <div class="newstext">
             <h4>Sign up for Newsletter</h4>
@@ -47,7 +60,7 @@
     
     <footer>
         <div class="col Logo">
-            <img src="Image/logo.png" alt="" width="120px" height="70px">
+            <img src="../static/images/homepage/products/logo.png" alt="" width="120px" height="70px">
             <h4>Contact</h4>
             <p><strong>Address: </strong>No 27, Chris Madueke Street, Lekki Phase1, Lagos</p>
             <p><strong>Phone: </strong>+234 7064154581</p>

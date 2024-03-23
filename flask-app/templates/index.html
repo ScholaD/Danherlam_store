@@ -6,192 +6,190 @@
     <title>Your Title Here</title>
         <!--Link for styles-->
     <link rel="stylesheet" href="../static/styles/style.css">
+      <link rel="stylesheet" href="../static/styles/styles.css">
     <link rel="stylesheet" href="{{ url_for('static', filename='styles/my_styles.css') }}">
 </head>
 <body>
-        <!--This is the Header-->
-    <div class="search-header">
+<div class="search-header">
         <div class="search">
           <form action="#">
               <input type="text" placeholder="Search Products..." name="search">
               <button type="submit"><i class="fa fa-search"></i></button>
           </form>
         </div>
-      </div>
-	<!-- for navigation -->
-      <div class="nav-header">
-        <div class="logo">
-          <img src="../static/images/homepage/logo.png" alt="Logo">
-        </div>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="Tiles.html">Tiles</a></li>
-          <li><a href="Doors.html">Doors</a></li>
-          <li><a href="Roofsheet.html">Roofing Sheets</a></li>
-          <li><a href="Contact.html">Contact</a></li>
-          <li><a  class="active" href="About.html">About</a></li>
-          <li class="cart"><a href="cart.html"><img src="image/cart.png" alt="Cart"></a></li>
-          <li class="cart"><a href="account.html"><img src="../static/images/homepage/download.png" alt="About"></a></li>
+              <li class="cart"><a href="account.html"><img src="image/download.png" alt="About"></a></li>
+
         </ul>
       </div>
-<!-- for the slides -->
-<div class="slideshow-container">
-    <div class="slide">
-      <img src="image/image1.jpeg" alt="Slide 1">
-      <div class="text-overlay">
-        <h2>Vision Statement</h2>
-        <h3>Innovating Spaces, Connecting Lives: </h3>
-        <p>
-            Our vision is to be at the forefront of innovation,<br>
-             seamlessly integrating technology and design to <br>
-            create tiles that not only transform spaces but <br> also foster meaningful connections in people's lives</p>
-      </div>
-    </div>
-    <div class="slide">
-      <img src="image/image2.jpg" alt="Slide 2">
-      <div class="text-overlay">
-        <h2>Mission Statement</h2>
-        <h3>Innovating Elegance, Inspiring Design:</h3>
-        <p>Our mission at Danherlam Global<br>
-            Limited is to be a beacon of innovation<br> 
-            in the tile industry offering cutting-edge<br> designs and solutions that inspire and transform spaces.</p>
-      </div>
-    </div>
-
-    <div class="slide">
-      <img src="image/image3.jpg" alt="Slide 3">
-      <div class="text-overlay">
-        <h2>Danherlam Philosophy</h2>
-        <h3> Adaptability and Growth:</h3>
-        <p>The philosophy of adaptability underscores our <br>
-            ability to evolve with the ever-changing landscape <br>
-            of design, technology, and customer preferences.<br>
-            We embrace change as an opportunity for growth, <br>
-            constantly learning and refining our strategies to<br> stay ahead in the dynamic and competitive tile industry.</p>
-      </div>
-    </div>
-  </div>
-
-  <section class="featured-section">
-    <h2 style="font-size: 60px; font-weight: bold;">Featured Products</h2>
-    <div class="product">
-      <img src="Image/image4.jpg" alt="Product 1">
-      <h3>Staturio Rett</h3>
-      <p> 60x120</p>
-      <p>#18,000</p>
-    </div>
-    <div class="product">
-      <img src="Image/image5.jpg" alt="Product 2">
-      <h3>Atom Grey</h3>
-      <p> 60x60</p>
-      <p>#15,000</p>
-    </div>
-    <div class="product">
-      <img src="Image/image6.jpeg" alt="Product 3">
-      <h3>Pivot Doors</h3>
-      <p> A BeautifulSecurity Door</p>
-      <p>#350,000</p>
-    </div>
-    <div class="product">
-      <img src="Image/image7.jpeg" alt="Product 4">
-      <h3>Pivot Doors</h3>
-      <p> A BeautifulSecurity Door</p>
-      <p>#350,000</p>
-    </div>
-    <div class="product">
-      <img src="Image/image8.jpeg" alt="Product 5">
-      <h3>Product 5</h3>
-      <p>Description of Product 5</p>
-      <p>$39.99</p>
-    </div>
-    <div class="product">
-      <img src="Image/image9.png" alt="Product 6">
-      <h3>Gres Porcellenatos</h3>
-      <p> 75.5 x 175.5</p>
-      <p>#35,000</p>
+      <div class="nav-header">
+        <div class="logo">
+            <a href="index.html">
+                <img src="../static/images/homepage/logo.png" alt="Logo">
+            </a>
+        </div>
+        <ul>
+          <li><a  class="active" href="index.html">Home</a></li>
+          <li><a href="Tiles.html">Tiles</a></li>
+          <li><a  href="Doors.html">Doors</a></li>
+          <li><a href="Roofsheet.html">Roofing Sheets</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+          <li class="cart"><a href="cart.html"><img src="../static/images/homepage/cart.png" alt="Cart"></a></li>
+          <li class="dropdown">
+            <a href="account.html" class="cart">
+                <img src="../static/images/homepage/download.png" alt="About">
+            </a>
+            <div class="dropdown-content">
+                <a href="signin.html">Sign In</a>
+                <a href="signup.html">Sign Up</a>
+            </div>
+        </li>
+    </ul>
     </div>
 
-    <div class="product">
-        <img src="Image/image10.jpeg" alt="Product 7">
-        <h3> Plain White</h3>
-        <p> 60x60</p>
-        <p>#15,000</p>
+    <div class="container">
+        <img src="../static/images/homepage/products/danh.jpg" alt="Snow" style="width:100%;">
+        <div class="centered"> 
+            <img src="../static/images/homepage/logo.png" alt="Logo"> </div>
+            <div class="left">
+            <h1 style="text-decoration: underline;"> DANHERLAM</h1>
+            <h5> GLOBAL LIMITED</h5>
+        </div>
     </div>
+    
 
-    <div class="product">
-        <img src="Image/image11.jpeg" alt="Product 8">
-        <h3>Mongaleri</h3>
-        <p> 60 x 60</p>
-        <p>#35,000</p>
-      </div>
-  </section>  
+    <div class="text1">
+<h4> ABOUT US</h4>
+      <h5> Welcome to Danherlam Global Limited,your premier destination for high-quality
+                marbles, tiles, <br> roofing sheets, and doors.Our products redefine elegance and sophistication,
+                 catering to diverse <br> residential and commercial projects worldwide.
+                Leveraging the expertise of our professionals,<br> we offer a processed range with excellent finish,elegant looks, high strength, and exquisite design. </h5>
+              </div>
+                <div class="pics"> 
+                <img src="../static/images/homepage/products/plat.png" alt="platform" style="  height: 10%;">
+                </div>
+                <div class="pics2">
+                  <img src="../static/images/homepage/products/form.jpg" alt="platform">
+           <div class="text2">     
+ <h4> VISION STATEMENT</h4>
+ <h5> <b> Spaces, Connecting Lives:</b><br>
+      Our vision is to be at the forefront of innovation,
+       seamlessly integrating technology and design to
+      create tiles that not only transform spaces but  also foster meaningful connections in people's lives</p>
+</h5>
+           </div>
+                </div>
+              
+<div class="text3">
+  <h4> MISSION STATEMENT</h4>
+  <h5> Innovating Elegance, Inspiring Design:
+    Our mission at Danherlam Global
+    Limited is to be a beacon of innovation
+    in the tile industry  offering cutting-edge designs and solutions that <br>inspire and transform spaces.
+  </h5>
+</div>
+<div class="tile-images">
+  <img src="../static/images/homepage/products/door1.jpeg" alt="Tile 1">
+  <img src="../static/images/homepage/products/door2.jpg" alt="Tile 2">
+  <img src="../static/images/homepage/products/door3.jpg" alt="Tile 3">
+</div>
+
+<div class="text4">
+  <h4>VISIT OUR SHOWROOM</h4>   
+  <h5>We invite you to explore our exquisite range of marbles, doors and tiles at our showroom at <u>
+27 Chris Madueke drive, Lekki phase 1, Lekki, Lagos.</u> Immerse yourself in the world of luxury and witness the 
+beauty of our firsthand products firsthand. Our experienced team will be delighted to assist you
+in finding the perfect solutions to your Products.
+  </ul></h5>
+<img src="../static/images/homepage/products/tile1.png" alt="showroom">
+
+<div class="feedback-form">
+  <h2>Feedback Form</h2>
+  <form>
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" required><br>
+
+      <label for="email">Your Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Your Feedback:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+
+      <input type="submit" value="Submit Feedback">
+  </form>
+</div>
 
 
 <section id="newsletter">
-    <div class="newstext">
-        <h4>Sign up for Newsletter</h4>
-        <p>Get e-mail updates about our latest shop and <span>special offers</span></p>
-    </div>
-    <div class="form">
-        <input type="text" placeholder="Your email address">
-        <button class="normal">Sign up</button>
-    </div>
-</section>
-
-<footer>
-    <div class="col Logo">
-        <img src="Image/logo.png" alt="" width="120px" height="70px">
-        <h4>Contact</h4>
-        <p><strong>Address: </strong>No 27, Chris Madueke Street, Lekki Phase1, Lagos</p>
-        <p><strong>Phone: </strong>+234 7064154581</p>
-        <p><strong>Hours: </strong>Monday to Fridy (8am - 6pm)</p>
-        <div class="follow">
-            <h4>Follow us</h4>
-            <div class="icon">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-tiktok"></i>
+        <div class="newstext">
+            <h4>Sign up for Newsletter</h4>
+            <p>Get e-mail updates about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="text" placeholder="Your email address">
+            <button class="normal">Sign up</button>
+        </div>
+    </section>
+    
+    <footer>
+        <div class="col Logo">
+            <img src="../static/images/homepage/logo.png" alt="" width="120px" height="70px">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>No 27, Chris Madueke Street, Lekki Phase1, Lagos</p>
+            <p><strong>Phone: </strong>+234 7064154581</p>
+            <p><strong>Hours: </strong>Monday to Fridy (8am - 6pm)</p>
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fab fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                </div>
             </div>
         </div>
-    </div>
-    
-    <div class="col">
-        <h4>About</h4>
-        <a href="#">About us</a>
-        <a href="#">Delivery Information</a>
-        <a href="#">Privacy policy</a>
-        <a href="#">Terms and Conditions</a>
-        <a href="#">Contact us</a>
-    </div>
         
-    <div class="col">
-        <h4>My Account</h4>
-        <a href="#">Sign in</a>
-        <a href="#">View Cart</a>
-        <a href="#">My Wishlist</a>
-        <a href="#">Track my order</a>
-        <a href="#">Help</a>
-    </div>
-    
-    <div class="col install">
-        <h4>Install App</h4>
-        <p>From App store or google store</p>
-        <div class="row">
-            <a href="#"><img src="../static/images/footer-images/playstore.png" alt="" width="150px" height="100px"></a>
-            <a href="#"><img src="../static/images/footer-images/appstore.png" alt="" width="150px" height="100px"></a>
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">About us</a>
+            <a href="#">Delivery Information</a>
+            <a href="#">Privacy policy</a>
+            <a href="#">Terms and Conditions</a>
+            <a href="#">Contact us</a>
         </div>
-        <p>Secured Payment Gateways</p>
-        <img src="../static/images/footer-images/secured-payment.png" alt="">
-    </div>
+            
+        <div class="col">
+            <h4>My Account</h4>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track my order</a>
+            <a href="#">Help</a>
+        </div>
+        
+        <div class="col install">
+            <h4>Install App</h4>
+            <p>From App store or google store</p>
+            <div class="row">
+                <a href="#"><img src="../static/images/footer-images/playstore.png" alt="" width="150px" height="100px"></a>
+                <a href="#"><img src="../static/images/footer-images/appstore.png" alt="" width="150px" height="100px"></a>
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="../static/images/footer-images/secured-payment.png" alt="">
+        </div>
+    
+        <div class="copyright">
+            <p>&#169 Danherlam Global Limited. 2024</p>
+        </div>
+    </footer>
+    
+    
+    </body>
+    </html>
+    
 
-    <div class="copyright">
-        <p>&#169 Dray Fingerfoods & Grills. 2024</p>
-    </div>
-</footer>
 
 
-</body>
-</html>
+
 
 
